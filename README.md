@@ -27,3 +27,21 @@ The first generated code was [uk23demo.py](uk23demo.py).
 I then asked to use proper cryptographic libs, resulting in [uk23demo_secure.py](uk23demo_secure.py).
 
 How long did it take?  Just below 30 minutes...
+
+## Local output
+```txt
+--- Setup Complete ---
+Parties: 3, Threshold: 1
+
+--- Phase 1: Presigning ---
+Presignature generated (r): 0x3c60ed8f...
+
+--- Phase 2: Signing ---
+Message: b'Honest Majority ECDSA'
+Signature (r, s):
+  r: 0x3c60ed8f7815c8ae5bd835c405476ab6ff4875a5ebe122f5305ce33574d3ead0
+  s: 0x16245c86e893b9eb66b38bef40e0b1f424f0bbc36079ba64aaf43d8dfaa3a3ee
+
+--- Phase 3: Verification ---
+SUCCESS: Signature Verified!
+```
