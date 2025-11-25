@@ -28,6 +28,8 @@ I then asked to use proper cryptographic libs, resulting in [uk23demo_secure.py]
 
 How long did it take?  Just below 30 minutes...
 
+Code still had some hard-coded values, this version [puk23demo_gen.py](puk23demo_gen.py) can use any n, and malicious t actors.
+ 
 ## Local output: 3 parties, 1 corrupt
 ```txt
 --- Setup Complete ---
@@ -44,4 +46,19 @@ Signature (r, s):
 
 --- Phase 3: Verification ---
 SUCCESS: Signature Verified!
+```
+## Local output: 5 parties, 2 corrupt
+```txt
+Running simulation with n=5, t=2...
+Presignature OK.
+Signature generated: r=0x12f8a656...
+Verification SUCCESS!
+```
+
+## Local output: 5 parties, 3 corrupt
+```txt
+File "/home/tj/Code/UK23/puk23demo_gen.py", line 149, in triple_generation
+    if T_val != 0: raise Exception("Triple Verification Failed!")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: Triple Verification Failed!
 ```
