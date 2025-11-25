@@ -28,7 +28,7 @@ I then asked to use proper cryptographic libs, resulting in [uk23demo_secure.py]
 
 How long did it take?  Just below 30 minutes...
 
-## Local output
+## Local output: 3 parties, 1 corrupt
 ```txt
 --- Setup Complete ---
 Parties: 3, Threshold: 1
